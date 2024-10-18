@@ -1,0 +1,112 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddb790;
+} 
+/*header*/
+.header{
+    color: white;
+    padding: 30px 15px;
+    margin: 0 auto;
+    border-bottom: 10px solid #d68ab9;
+    background-color: #2E2E2E;
+} 
+/*Barra de navegación*/
+.navbar{
+    /*width: 960px;
+    height: 55px;
+    background-color: #111;*/
+    width: 100%;
+    max-width: 960px;
+    background-color: #111;
+    margin: 0 auto;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 auto;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    /*height:45px*/
+    list-style: none;
+    display: flex;
+}
+li{
+    /*float: left;*/
+    padding: 15px 0;
+}
+a{
+    color: #fff;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    text-decoration:none ;
+    padding: 10px 15px;
+    transition: background color 0.3s;
+    /*border-right: 2px solid #fff;
+    padding: auto;
+    font-size: 18 px;*/
+}
+a:hover{
+    background-color: #b33f61;
+    border-radius: 5px;
+}
+/*Contenido de la página*/
+.contenedor{
+    padding: 0;
+    margin: 50px auto 0;
+    width: 960px;
+}
+.contenido{
+    margin: 0;
+    padding: 10px;
+    float: left;
+    width: 938px;
+    background-color: #e4acac;
+    border: 1px solid #111;
+}
+/*Ajustar texto*/
+.centrar{
+    text-align: center;
+}
+.justificar{
+    text-align: justify;
+}
+.footer{
+    background-color: #705959;
+    color: #fff;
+    text-align: 20px 10px;
+    width: 100%;
+    margin: 0;
+}
+@media (max-width: 760px){
+    .navbar{
+        flex-direction: column;
+        align-items: stretch;        
+    }
+    ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    li{
+        text-align: center;
+        width: 100%;
+    }
+    a{
+        border-right: none;
+    }
+}
+/*Tablas modificadas*/
+.tabla{
+    tbody tr:nth-child(odd) {
+        background-color: #ee93d7;
+      }    
+      tbody tr:nth-child(even) {
+        background-color: #e495e4;
+      }
+      table {
+        background-color: #e47eca;
+      }
+      
+}
